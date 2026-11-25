@@ -1,0 +1,123 @@
+.not-found-container1 {
+  width: 100%;
+  display: flex;
+  overflow: hidden;
+  min-height: 100vh;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  padding: 24px 16px;
+  box-sizing: border-box;
+}
+
+.not-found-container2 {
+  display: flex;
+  position: relative;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+}
+
+.not-found-text2 {
+  color: rgb(38, 38, 38);
+  font-size: 252px;
+  margin-top: -20px;
+  font-weight: 900;
+  margin-bottom: -20px;
+  letter-spacing: -20px;
+  line-height: 1;
+  white-space: nowrap;
+}
+
+.not-found-container3 {
+  width: 100%;
+  max-width: 421px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0 16px;
+  box-sizing: border-box;
+}
+
+.not-found-text3 {
+  text-align: center;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.5;
+  color: rgb(38, 38, 38);
+}
+
+/* Mobile responsiveness */
+@media (max-width: 480px) {
+  .not-found-container1 {
+    padding: 16px 12px;
+    min-height: 100dvh;
+  }
+
+  .not-found-text2 {
+    font-size: 120px;
+    letter-spacing: -8px;
+    margin-top: -10px;
+    margin-bottom: -10px;
+  }
+
+  .not-found-text3 {
+    font-size: 16px;
+    line-height: 1.4;
+  }
+
+  .back-home-btn {
+    padding: 14px 28px;
+    font-size: 14px;
+    margin-top: 24px;
+  }
+}
+
+@media (max-width: 360px) {
+  .not-found-text2 {
+    font-size: 100px;
+    letter-spacing: -6px;
+  }
+
+  .not-found-text3 {
+    font-size: 14px;
+  }
+}
+
+/* Short screens (landscape mobile, small laptops) */
+@media (max-height: 500px) and (orientation: landscape) {
+  .not-found-container1 {
+    min-height: auto;
+    padding: 40px 16px;
+  }
+
+  .not-found-text2 {
+    font-size: 140px;
+    letter-spacing: -10px;
+  }
+
+  .back-home-btn {
+    margin-top: 20px;
+  }
+}
+/* --- INJECTED BACK BUTTON STYLES --- */
+.back-home-btn {
+  margin-top: 40px;
+  padding: 16px 40px;
+  background-color: #100e0a; /* Zavro Dark Theme */
+  color: #f2f3f7;            /* Zavro Light Theme */
+  text-decoration: none;
+  font-family: 'Manrope', sans-serif;
+  font-weight: 600;
+  font-size: 16px;
+  letter-spacing: 1px;
+  border-radius: 50px;
+  transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.back-home-btn:hover {
+  transform: scale(1.05);
+  background-color: #2874DE; /* Zavro Blue Accent */
+}
